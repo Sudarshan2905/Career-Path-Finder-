@@ -1,0 +1,158 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Career Path Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body >
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container nav">
+      <img src="logo.png" alt="CPF Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="streams.html">Career Streams</a></li>
+          <li><a href="quiz.html">Career Quiz</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find the Right Career Path After 10th</h1>
+      <p>Your future starts here. Take the quiz or explore career options now!</p>
+      <div class="hero-buttons">
+        <a href="quiz.html" class="btn">Start Quiz</a>
+        <a href="streams.html" class="btn secondary">Explore Streams</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <h2>Why Choose Career Path Finder?</h2>
+    <div class="features-container">
+        <div class="feature-box">
+            <i class="fas fa-robot fa-3x" style="color: #4b6cb7; margin-bottom: 15px;"></i>
+            <h3>AI-Powered Guidance</h3>
+            <p>We use smart AI algorithms to analyze your interests and strengths — giving you the most accurate stream recommendation after 10th.</p>
+          </div>
+          
+      <div class="feature-box">
+        <img src="https://img.icons8.com/clouds/100/classroom.png" alt="Expert Teachers">
+        <h3>Expert Teachers</h3>
+        <p>Backed by real educators who guide students with practical advice, not just theory — our team has decades of career counseling experience.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://img.icons8.com/clouds/100/checked.png" alt="Personalized">
+        <h3>Personalized & Free</h3>
+        <p>No generic answers. Your quiz result is tailored just for you — and it’s 100% free, unlike many expensive coaching platforms.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps-container">
+        
+      <div class="step">
+        <img src="step1.png" alt="Step 1" />
+        <h3>Assess Your Interests</h3>
+        <p>Start by answering a few simple questions to identify your passions, strengths, and interests.</p>
+      </div>
+      <div class="step">
+        <img src="step2.png" alt="Step 2" />
+        <h3>Explore Career Paths</h3>
+        <p>Based on your responses, get personalized career options and recommendations that align with your skills and preferences.</p>
+      </div>
+      <div class="step">
+        <img src="step3.png" alt="Step 3" />
+        <h3>Choose Your Path</h3>
+        <p>Choose a career path, and we'll provide the resources, guidance, and next steps to help you get there.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact-support">
+    <h2>Contact / Support</h2>
+    <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img src="gmail.png" alt="Email" />
+        <h3>Email</h3>
+        <p><a href="mailto:sudarshan.29@gmail.com">sudarshan.29@gmail.com</a></p>
+      </div>
+      <div class="contact-item">
+        <img src="phone.png" alt="Phone" />
+        <h3>Phone</h3>
+        <p><a href="tel:+123456789">+91 7276649070</a></p>
+      </div>
+      <div class="contact-item">
+        <img src="live.png" alt="Live Chat" />
+        <h3>Live Chat</h3>
+        <p><a href="https://example.com/chat">Start Chat</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-of-service">Terms of Service</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+          <img src="facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+          <img src="twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+          <img src="instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+          <img src="linkedin.png" alt="LinkedIn" />
+        </a><br>
+        <p>© 2025 Career Path Finder. All rights reserved.</p>
+      </div>
+    </div>
+  
+    
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Fade-in effect when scrolling
+const elements = document.querySelectorAll('.fade-in');
+
+const onScroll = () => {
+  elements.forEach(element => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top <= window.innerHeight * 0.8) {
+      element.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', onScroll);
+
+// Initially trigger scroll effect for elements already in view
+onScroll();
+
+  </script>
+</body>
+</html>

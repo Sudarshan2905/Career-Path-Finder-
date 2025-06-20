@@ -1,0 +1,59 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Quiz - Career Path Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <img src="logo.png" alt="CPF Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="streams.html">Career Streams</a></li>
+          <li><a href="quiz.html">Career Quiz</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="quiz">
+    <div class="container">
+      <h2>Career Quiz</h2>
+      <p>Answer a few questions to discover which career path suits you best!</p>
+      
+      <div id="quiz-container">
+        <div class="question">
+          <p id="question-text">Question 1: What do you enjoy most?</p>
+          <div class="options">
+            <button class="option" onclick="nextQuestion(1)">Science</button>
+            <button class="option" onclick="nextQuestion(2)">Commerce</button>
+            <button class="option" onclick="nextQuestion(3)">Arts</button>
+            <button class="option" onclick="nextQuestion(4)">Vocational</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="result" class="result" style="display:none;">
+        <h3>Your Suggested Career Path</h3>
+        <p id="career-path">Loading...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Career Path Finder. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
